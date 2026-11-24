@@ -1,0 +1,58 @@
+
+
+
+
+  <style>
+  /* Example basic styles */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .booking-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .booking-banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .highlight-box {
+    background: rgba(255,255,255,0.9);
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  .booking-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 0;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: pulse 1.5s infinite;
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  .site-link {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+</style>

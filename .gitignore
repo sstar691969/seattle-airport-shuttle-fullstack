@@ -1,0 +1,17 @@
+node_modules
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# macOS and editor files
+.DS_Store
+.vscode/
+
+# Unrelated coursework
+reactshuttlestore/src/AD312-useWindowSize/
+reactshuttlestore/Untitled-1.ipynb

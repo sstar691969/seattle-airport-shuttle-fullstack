@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cruise Shuttle Booking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .booking-banner {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .banner-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .banner-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Overlay with fade-in */
+    .booking-banner-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 20px;
+      width: 90%;
+      max-width: 500px;
+      background: rgba(0,0,0,0.5);
+      border-radius: 10px;
+      color: white;
+      box-sizing: border-box;
+      opacity: 0; /* Start invisible */
+      animation: fadeInUp 1s ease forwards; /* Apply animation */
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+      }
+      100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .booking-banner-overlay h1 {
+      font-size: 2rem;
+      margin: 10px 0;
+    }
+
+    .booking-banner-overlay p {
+      font-size: 1rem;
+      margin: 5px 0;
+    }
+
+    .highlight-box {
+      background: rgba(255,255,255,0.95);
+      color: black;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    .highlight-box h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .booking-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px 0;
+      background-color: #ff6600;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .site-link {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .booking-banner-overlay {
+        padding: 15px;
+      }
+      .booking-banner-overlay h1 {
+        font-size: 1.5rem;
+      }
+      .booking-banner-overlay p {
+        font-size: 0.9rem;
+      }
+      .highlight-box h2 {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .booking-banner-overlay h1 {
+        font-size: 1.2rem;
+      }
+      .booking-banner-overlay p,
+      .highlight-box h2 {
+        font-size: 0.85rem;
+      }
+      .booking-button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<section class="booking-banner">
+  <div class="banner-container">
+    <!-- Banner Image -->
+     <img src="https://2seattleairportshuttles.com/images/banner.png" alt="Cruise Shuttle Banner" class="banner-image" />
+  
+
+    <!-- Overlay Content -->
+    <div class="booking-banner-overlay">
+      <h1>🚐 Cruise or Airport Ride?</h1>
+      <p>Fast & Secure Booking. Instant Confirmation in 3 Seconds!</p>
+
+      <div class="highlight-box">
+        <h2>✅ Cruise Ship Shuttle? Book Now — Seats Fill Fast!</h2>
+        <p>
+          📞 <a href="tel:+12068983322" class="booking-button pulse">
+            Call Now to Reserve Instantly: (206) 898-3322
+          </a>
+        </p>
+        <p>
+          📲 Or Text <strong>"CRUISE"</strong> to
+          <a href="sms:+12068983322">206-898-3322</a>
+        </p>
+        <p>🕒 Takes less than 3 seconds to reserve your ride.</p>
+        <p><a href="https://2SeattleAirportShuttles.com" class="site-link" target="_blank">2SeattleAirportShuttles.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
